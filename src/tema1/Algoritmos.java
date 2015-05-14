@@ -193,42 +193,110 @@ public class Algoritmos {
     }
     
     /**
-     * Imprime todos los numeros naturales hasta un numero introducido por el
-     * teclado.
+     * Imprime y cuenta los multiplos de 3 desde 1 hasta un numero introducido
+     * por el teclado.
      */
     public static void once() {
-        
+        String numero;
+        int limite;
+        int contador = 0;
+        numero = JOptionPane.showInputDialog(null, "Escribe el numero final: ",
+                "", -1);
+        limite = Integer.parseInt(numero);
+        int i = 1;
+        while (i <= limite) {
+            if (i == ((i / 3) *3)) {
+                System.out.println(i);
+                contador = contador + i;
+            }
+            i++;
+        }
+        System.out.println("La suma de los multiplos de 3 es: " + contador);
     }
     
     /**
-     * Imprime todos los numeros naturales hasta un numero introducido por el
-     * teclado.
+     * Imprime los numero del 1 al 100 y suma los numeros pares y los numeros
+     * impares.
      */
     public static void doce() {
-        
+        int sumaPar = 0;
+        int sumaImpar = 0;
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(i);
+            if (i == ((i / 2) *2)) {
+                sumaPar = sumaPar + i;
+            } else {
+                sumaImpar = sumaImpar + i;
+            }
+        }
+        System.out.println("La suma de los pares es: " + sumaPar);
+        System.out.println("La suma de los impares es: " + sumaImpar);
     }
     
     /**
-     * Imprime todos los numeros naturales hasta un numero introducido por el
-     * teclado.
+     * Imprime y cuenta los numeros multiplos de 2 ó de 3 que hay entre 1 y 100.
      */
     public static void trece() {
-        
+        int suma = 0;
+        for (int i = 1; i <= 100; i++) {
+            if (i == ((i / 2) * 2) | i == ((i / 3) * 3)) {
+                System.out.println(i);
+                suma = suma + i;
+            }
+        }
+        System.out.println("La suma de los multiplos de 2 y 3 es : " + suma);
     }
     
     /**
-     * Imprime todos los numeros naturales hasta un numero introducido por el
+     * Imprime el numero mayor y el menor de cinco numero introducidos por el
      * teclado.
      */
     public static void catorce() {
-        
+        int min = 0;
+        int max = 9999;
+        int n = 0;
+        while ( n <= 5) {
+            String cadena;
+            int numero;
+            cadena = JOptionPane.showInputDialog(null, "Escribe un numero: ",
+                "", -1);
+            numero = Integer.parseInt(cadena);
+            if (numero > min) {
+                min = numero;
+            } else if (numero < max) {
+                max = numero;
+            }
+            n++;
+        }
+        System.out.println("El numero mayor es: " + min);
+        System.out.println("El numero menor es: " + max);
     }
     
     /**
-     * Imprime todos los numeros naturales hasta un numero introducido por el
-     * teclado.
+     * Imprime los numeros que hay entre dos numeros introducidos por el teclado
+     * en orden ascendente, cuenta cuantos son pares y suma los impares.
      */
     public static void quince() {
-        
+        String cadena;
+        int inicio;
+        int sumaPar = 0;
+        int sumaImpar = 0;
+        cadena = JOptionPane.showInputDialog(null, "Escribe el numero de"
+                + " inicio: ", "", -1);
+        inicio = Integer.parseInt(cadena);
+        int fin;
+        cadena = JOptionPane.showInputDialog(null, "Escribe el numero final: ",
+            "", -1);
+        fin = Integer.parseInt(cadena);
+        for (int i = inicio; i <= fin; i++) {
+            System.out.println(i);
+            if (i == ((i / 2) *2)) {
+                sumaPar = sumaPar + i;
+            } else {
+                sumaImpar = sumaImpar + i;
+            }
+        }
+        System.out.println("La suma de los pares es: " + sumaPar);
+        System.out.println("La suma de los impares es: " + sumaImpar);
     }
 }
