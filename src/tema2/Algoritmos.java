@@ -5,7 +5,8 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author David Alberto Torres Real 235236 Tema 1 de la tarea 52 Algoritmos
+ * @author David Alberto Torres Real 235236
+ * Tema 2 de la tarea Algoritmos
  * @since 11/05/2015
  * @version 1.0
  */
