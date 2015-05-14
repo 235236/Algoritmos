@@ -18,8 +18,7 @@ public class Algoritmos {
     public static void main(String[] args) throws IOException {
         int opcion;
         String opc;
-        opc = JOptionPane.showInputDialog(null, "Selecciona un algoritmo 16-21: "
-                , "Algoritmos: Tema 2", -1);
+        opc = JOptionPane.showInputDialog(null, "Selecciona un algoritmo 16-21: ", "Algoritmos: Tema 2", -1);
         opcion = Integer.parseInt(opc);
         if (opcion == 16) {
             dieciseis();
@@ -43,8 +42,10 @@ public class Algoritmos {
      *
      */
     public static void dieciseis() {
-        for (int i = 1; i <= 100; i++) {
-            System.out.println(i);
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 100; j++) {
+                System.out.println(j);
+            }
         }
     }
 
