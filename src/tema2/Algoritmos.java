@@ -54,10 +54,7 @@ public class Algoritmos {
      * numeros.
      */
     public static void diecisiete() {
-        for (int i = 100;
-                i >= 0; i--) {
-            System.out.println(i);
-        }
+        
     }
 
     /**
@@ -65,52 +62,27 @@ public class Algoritmos {
      * introducida por el teclado.
      */
     public static void diesiocho() {
-        for (int i = 0;
-                i <= 100; i = i + 2) {
-            System.out.println(i);
-        }
+        
     }
 
     /**
      * Simulador de un reloj digital.
      */
     public static void diesinueve() {
-        int suma = 0;
-        for (int i = 0;
-                i <= 100; i++) {
-            suma = suma + i;
-        }
-
-        System.out.println(suma);
+        
     }
 
     /**
      * Calula el factorial de un numero.
      */
     public static void veinte() {
-        int impares = 0;
-        for (int i = 1;
-                i <= 100; i = i + 2) {
-            impares = impares + 1;
-            System.out.println(i);
-        }
-
-        System.out.println(impares);
+        
     }
 
     /**
      * Calcula la suma de los pares e impares de los numeros entre 1 y 1000.
      */
     public static void veintiuno() {
-        String numero;
-        int limite;
-        numero = JOptionPane.showInputDialog(null, "Escribe el numero final: ",
-                "", -1);
-        limite = Integer.parseInt(numero);
-        int cont = 1;
-        while (cont <= limite) {
-            System.out.println(cont);
-            cont++;
-        }
+            
     }
 }
