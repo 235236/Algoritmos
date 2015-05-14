@@ -18,7 +18,8 @@ public class Algoritmos {
     public static void main(String[] args) throws IOException {
         int opcion;
         String opc;
-        opc = JOptionPane.showInputDialog(null, "Selecciona un algoritmo 16-21: ", "Algoritmos: Tema 2", -1);
+        opc = JOptionPane.showInputDialog(null, "Selecciona un algoritmo 16-21:"
+                + " ", "Algoritmos: Tema 2", -1);
         opcion = Integer.parseInt(opc);
         if (opcion == 16) {
             dieciseis();
@@ -83,6 +84,16 @@ public class Algoritmos {
      * Calcula la suma de los pares e impares de los numeros entre 1 y 1000.
      */
     public static void veintiuno() {
-            
+        int sumaPar = 0;
+        int sumaImpar = 0;
+        for (int i = 1; i <= 1000; i++) {
+            if (i == ((i / 2) *2)) {
+                sumaPar = sumaPar + i;
+            } else {
+                sumaImpar = sumaImpar + i;
+            }
+        }
+        System.out.println("La suma de los pares es: " + sumaPar);
+        System.out.println("La suma de los impares es: " + sumaImpar);
     }
 }
